@@ -1,0 +1,141 @@
+p {
+    color: rgb(255, 255, 255)
+}
+.fieldi_set{
+    padding: 0% 25%;
+}
+#heading {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#msform {
+    margin-top: 20px;
+}
+
+.form-label{
+    float: left;
+    color: #ffffff;
+}
+#submitButton{
+    margin-top: 5%;
+    float:right;
+    background-color: #3ab794;
+    padding: 2% 10%;
+}
+#msform fieldset {
+
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.rate-card {
+    text-align: center;
+
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    outline-width: 0
+}
+
+
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+    margin-top: 0;
+}
+
+.fs-title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+#circlebook{
+    text-align: center;
+}
+.inputFields{
+    margin-bottom: 5%;
+}
+
+.allCardData{
+    padding:0 25%
+}
+
+/*--------------- media queries ---------------*?
+
+/*for tablet devices*/
+@media only screen and (max-width: 1280px) {
+    .allCardData{
+        padding:0 20%
+  }
+}
+
+/*for tablet devices - portraits*/
+@media only screen and (max-width: 1024px) {
+    .allCardData{
+        padding:0 10%
+  }
+}
+
+/*for mobile devices*/
+@media only screen and (max-width: 480px) {
+    #heading {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    .fs-title{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .fieldi_set{
+        padding: 0% 5%;
+    }
+
+    #submitButton{
+        margin-top: 10%;
+    }
+
+    .allCardData{
+        padding:0 5%
+  }
+}
