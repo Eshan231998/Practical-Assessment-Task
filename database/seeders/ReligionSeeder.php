@@ -5,24 +5,48 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Religion;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 class ReligionSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-        $religions = [
-            ['id' => 1, 'name' => 'Buddhism'],
-            ['id' => 2, 'name' => 'Hinduism'],
-            ['id' => 3, 'name' => 'Islam'],
-            ['id' => 4, 'name' => 'Christianity'],
-            ['id' => 5, 'name' => 'Other'],
-        ];
+        Schema::disableForeignKeyConstraints();
         DB::table('religions')->truncate();
-        foreach ($religions as $religion) {
-            Religion::create($religion);
-        }
+        Schema::enableForeignKeyConstraints();
+        DB::table('religions')->insert([[
+            'id' => '1',
+            'name' => 'Buddhism',
+        ], [
+            'id' => '2',
+            'name' => 'Christianity',
+        ], [
+            'id' => '3',
+            'name' => 'Hinduism'
+        ], [
+            'id' => '4',
+            'name' => 'Indigenous',
+        ], [
+            'id' => '5',
+            'name' => 'Islam',
+        ], [
+            'id' => '6',
+            'name' => 'Judaism',
+        ], [
+            'id' => '7',
+            'name' => 'Prevailing Beliefs',
+        ], [
+            'id' => '8',
+            'name' => 'Non-Religious'
+        ], [
+            'id' => '9',
+            'name' => 'Other',
+        ]]);
     }
 }

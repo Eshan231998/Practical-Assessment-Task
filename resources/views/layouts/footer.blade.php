@@ -9,7 +9,7 @@
             <div class="col-sm-6">
 
                 <div class="text-sm-end  d-block">
-                    Design & Develop by <a href="#"> CJ </a>
+                    Design & Develop by <a href="#"> EN </a>
                 </div>
             </div>
         </div>
